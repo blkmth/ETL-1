@@ -1,5 +1,5 @@
 -- suppression si existantes
-DROP TABLES IF EXISTS sales_clean ;
+DROP TABLE IF EXISTS sales_clean ;
 
      --table cible du pipeline
 CREATE TABLE sales_clean (

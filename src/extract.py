@@ -39,7 +39,7 @@ def extract_from_csv(file_path:str) -> pd.DataFrame:
         encoding="utf-8"
     )
 
-    logger.info(f"...")
+    logger.info(f"... {len(df)} lignes extraites | Colonnes : {list(df.columns) }")
     return df
 
 

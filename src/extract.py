@@ -32,8 +32,14 @@ def extract_from_csv(file_path:str) -> pd.DataFrame:
 
     logger.info(f"extraction des lignes depuis : {file_path}")
 
+    ## journalisation de l'extraction depuis le debut de l'extraction
+    df = pd.read_csv(
+        file_path ,
+        dtype= str, ## lit toutes les colonnes comme du texte
+        encoding="utf-8"
+    )
 
-
-
+    logger.info(f"...")
+    return df
 
 
